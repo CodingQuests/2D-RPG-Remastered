@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702741543
+::res://::1702742558
 export_presets.cfg::TextFile::-1::1701630447::0::1::::<><>::
 icon.svg::CompressedTexture2D::2508807028642169428::1700861361::1700861365::1::::<><>::
 ::res://Assets/::1702742169
@@ -221,9 +221,9 @@ Triangle Mouse icon 2.png::CompressedTexture2D::4488425326223728073::1701873692:
 Triangle Mouse icon 3.png::CompressedTexture2D::7827686965969151129::1701873692::1701314024::1::::<><>::
 ::res://Scenes/::1702741888
 World.tscn::PackedScene::9218305275917734317::1702741887::0::1::::<><>::uid://b68pymtpge2qm::::res://Scenes/Player/Player.tscn<>uid://ba213e8506yik::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames- transparency.png<>uid://de4wnmk6ucvf2::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames-.png<>uid://cjd6pj8bbu7mm::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Terrain2.png
-::res://Scenes/Player/::1702741888
+::res://Scenes/Player/::1702742424
 Dash.tscn::PackedScene::-1::1688736962::0::1::::<><>::
-Player.tscn::PackedScene::4631353576622516024::1702741888::0::1::::<><>::res://Scripts/Player.gd<>uid://b43fen17knnn2::::res://Assets/Character/Villager/Attack/Villager_Attack.png<>uid://6gi0fakxdnak::::res://Assets/Character/Villager/Idle/Villager_Idle.png<>uid://bx66od3tkktq6::::res://Assets/Character/Villager/Move/Villager_Move.png
+Player.tscn::PackedScene::4631353576622516024::1702742424::0::1::::<><>::res://Scripts/Player.gd<>uid://b43fen17knnn2::::res://Assets/Character/Villager/Attack/Villager_Attack.png<>uid://6gi0fakxdnak::::res://Assets/Character/Villager/Idle/Villager_Idle.png<>uid://bx66od3tkktq6::::res://Assets/Character/Villager/Move/Villager_Move.png<>uid://bckvpeycmx2qt::::res://Assets/Character/Villager/Attack/Equipment/Villager_Attack_Sword.png
 Slime.tscn::PackedScene::-1::1700155412::0::1::::<><>::
 ::res://Scripts/::1702741249
 Game.gd::GDScript::-1::1701302773::0::1::::<>Node<>::
