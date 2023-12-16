@@ -1,0 +1,9 @@
+>In order to make the auto-tile work for walls with 2 tiles or more of hight:
+1 - First you use the brush to draw the simpler portion of the tile
+2 - Once you finished drawing, press CTRL+M to fulfill the rest of the wall
+
+*Don't use 'Automapping while drawing', in this case, the way
+I created all the rules, It doesn't work. You have to draw it first and then press CTRL+M and it's done
+
+> If you want any platform('walls' brush) to have the ground with transparency instead of the flat color you can go to the .tsx file of the wall
+and, in the tileset properties painel, go to image and there is a 'edit' button. Click on that and choose the same wall but with transparency.

@@ -1,0 +1,207 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1702740507
+export_presets.cfg::TextFile::-1::1701630447::0::1::::<><>::
+icon.svg::CompressedTexture2D::2508807028642169428::1700861361::1700861365::1::::<><>::
+::res://Assets/::1702740507
+::res://Assets/Character/::1702740507
+::res://Assets/Character/Villager/::1702740499
+::res://Assets/Character/Villager/Attack/::1702740499
+Villager_Attack.png::CompressedTexture2D::4480011178885455889::1702740498::1702740508::1::::<><>::
+::res://Assets/Character/Villager/Attack/Equipment/::1702740499
+Villager_Attack_Beard.png::CompressedTexture2D::1092496742559379364::1702740498::1702740508::1::::<><>::
+Villager_Attack_Boots.png::CompressedTexture2D::8256064648695315566::1702740498::1702740508::1::::<><>::
+Villager_Attack_Chestplate.png::CompressedTexture2D::3725987658383215500::1702740498::1702740508::1::::<><>::
+Villager_Attack_FX.png::CompressedTexture2D::6253018625058163576::1702740498::1702740508::1::::<><>::
+Villager_Attack_Gloves.png::CompressedTexture2D::2884994937450886268::1702740498::1702740508::1::::<><>::
+Villager_Attack_Hair.png::CompressedTexture2D::1551880790785191571::1702740498::1702740508::1::::<><>::
+Villager_Attack_Hat.png::CompressedTexture2D::1937682154516681881::1702740498::1702740508::1::::<><>::
+Villager_Attack_Leggings.png::CompressedTexture2D::6129808534797240652::1702740498::1702740508::1::::<><>::
+Villager_Attack_Sword.png::CompressedTexture2D::2548744239542981975::1702740498::1702740508::1::::<><>::
+Villager_Attack_Sword_2.png::CompressedTexture2D::1487437392672429362::1702740498::1702740508::1::::<><>::
+::res://Assets/Character/Villager/Idle/::1702740499
+Villager_Idle.png::CompressedTexture2D::2188771063195090310::1702740498::1702740507::1::::<><>::
+::res://Assets/Character/Villager/Idle/Equipment/::1702740499
+Villager_Idle_Beard.png::CompressedTexture2D::5591631242964133573::1702740498::1702740508::1::::<><>::
+Villager_Idle_Boots.png::CompressedTexture2D::3680721089368363811::1702740498::1702740508::1::::<><>::
+Villager_Idle_Chestplate.png::CompressedTexture2D::5686961735116866861::1702740498::1702740508::1::::<><>::
+Villager_Idle_Gloves.png::CompressedTexture2D::525267464623729774::1702740498::1702740508::1::::<><>::
+Villager_Idle_Hair.png::CompressedTexture2D::5941256859164741770::1702740498::1702740507::1::::<><>::
+Villager_Idle_Hat.png::CompressedTexture2D::4263275906411512685::1702740498::1702740507::1::::<><>::
+Villager_Idle_Leggings.png::CompressedTexture2D::475620434990452807::1702740498::1702740507::1::::<><>::
+Villager_Idle_Sword.png::CompressedTexture2D::3194401596063992449::1702740498::1702740507::1::::<><>::
+Villager_Idle_Sword_2.png::CompressedTexture2D::6877711420215221734::1702740498::1702740507::1::::<><>::
+::res://Assets/Character/Villager/Move/::1702740499
+Villager_Move.png::CompressedTexture2D::4066667227335753947::1702740499::1702740508::1::::<><>::
+::res://Assets/Character/Villager/Move/Equipment/::1702740499
+Villager_Move_Beard.png::CompressedTexture2D::7139589008634193063::1702740498::1702740508::1::::<><>::
+Villager_Move_Boots.png::CompressedTexture2D::2632839095011005344::1702740498::1702740508::1::::<><>::
+Villager_Move_Chestplate.png::CompressedTexture2D::7553370436552421135::1702740498::1702740508::1::::<><>::
+Villager_Move_Gloves.png::CompressedTexture2D::5131864119415390328::1702740498::1702740508::1::::<><>::
+Villager_Move_Hair.png::CompressedTexture2D::8695535995546918007::1702740498::1702740508::1::::<><>::
+Villager_Move_Hat.png::CompressedTexture2D::8066014562326959659::1702740498::1702740508::1::::<><>::
+Villager_Move_Leggings.png::CompressedTexture2D::6213537011137731349::1702740499::1702740508::1::::<><>::
+Villager_Move_Sword.png::CompressedTexture2D::7842261471994232027::1702740499::1702740508::1::::<><>::
+Villager_Move_Sword_2.png::CompressedTexture2D::43139162026075939::1702740499::1702740508::1::::<><>::
+::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/::1701302772
+::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/::1701302773
+::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Characters/::1701302817
+luck creature-idle.png::CompressedTexture2D::4694108148867759455::1701302773::1701302817::1::::<><>::
+luck creature-run.png::CompressedTexture2D::5119806427911498081::1701302773::1701302817::1::::<><>::
+NPC Merchant-icons-all animations.png::CompressedTexture2D::2229441059861889609::1701302772::1701302817::1::::<><>::
+NPC Merchant-icons-bow to potion.png::CompressedTexture2D::3593464926388930889::1701302773::1701302817::1::::<><>::
+NPC Merchant-icons-bow.png::CompressedTexture2D::2279672337587997441::1701302773::1701302817::1::::<><>::
+NPC Merchant-icons-generic icon disappearing animation.png::CompressedTexture2D::5527730379969644481::1701302773::1701302817::1::::<><>::
+NPC Merchant-icons-potion to sword.png::CompressedTexture2D::5250715349176470737::1701302773::1701302817::1::::<><>::
+NPC Merchant-icons-potion.png::CompressedTexture2D::843133345065117335::1701302773::1701302817::1::::<><>::
+NPC Merchant-icons-sword to bow.png::CompressedTexture2D::1931018287688064649::1701302773::1701302817::1::::<><>::
+NPC Merchant-icons-sword.png::CompressedTexture2D::2620085331333777805::1701302773::1701302817::1::::<><>::
+NPC Merchant-idle.png::CompressedTexture2D::7078555662565664852::1701302773::1701302817::1::::<><>::
+NPC Merchant-interacting-entry.png::CompressedTexture2D::7899208515240437021::1701302773::1701302817::1::::<><>::
+NPC Merchant-interacting-loop.png::CompressedTexture2D::1653697446664705837::1701302773::1701302817::1::::<><>::
+NPC Merchant-interacting-rest.png::CompressedTexture2D::5938582580665348182::1701302773::1701302817::1::::<><>::
+::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Characters/NPC merchant - with animated items/::1701302817
+NPC Merchant-idle.png::CompressedTexture2D::3739469672230181532::1701302773::1701302817::1::::<><>::
+NPC Merchant-interaction-entry.png::CompressedTexture2D::7877920649909884804::1701302773::0::1::::<><>::
+NPC Merchant-interaction-loop.png::CompressedTexture2D::708035280573961729::1701302773::0::1::::<><>::
+NPC Merchant-interaction-rest.png::CompressedTexture2D::214442538633461390::1701302773::0::1::::<><>::
+::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Props/::1701302817
+altar 224x288 - standard.png::CompressedTexture2D::7280982455860558892::1701302773::1701302817::1::::<><>::
+altar 224x288 - standing on grass.png::CompressedTexture2D::499249373021159237::1701302773::1701302817::1::::<><>::
+Atlas-Props.png::CompressedTexture2D::6800102216599094227::1701302773::1701302817::1::::<><>::
+atmospheric nature particles.png::CompressedTexture2D::1110353611193876509::1701302773::1701302817::1::::<><>::
+generic_estructure1-1-on grass.png::CompressedTexture2D::1882012104040271584::1701302773::1701302817::1::::<><>::
+golden chalice 64x64-spirits.png::CompressedTexture2D::6929278835393576803::1701302773::1701302817::1::::<><>::
+shrine or fountain 160x128-on grass.png::CompressedTexture2D::4455619249003285895::1701302773::1701302817::1::::<><>::
+::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/TiledMap Editor/::1701302773
+0-READ ME.txt::TextFile::-1::1701302773::0::1::::<><>::
+rules.txt::TextFile::-1::1701302773::0::1::::<><>::
+::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/::1701302817
+0-READ ME.txt::TextFile::-1::1701302773::0::1::::<><>::
+demonstration.png::CompressedTexture2D::7554854530593454174::1701302773::1701302817::1::::<><>::
+tile guide.png::CompressedTexture2D::1381258535158708798::1701302773::1701302817::1::::<><>::
+Tileset-Animated Terrains-8 frames- transparency.png::CompressedTexture2D::2443787789563644034::1701302773::1701302817::1::::<><>::
+Tileset-Animated Terrains-8 frames-.png::CompressedTexture2D::7501244016824365897::1701302773::1701302817::1::::<><>::
+Tileset-Terrain2.png::CompressedTexture2D::5412643630811298996::1701302773::1701302817::1::::<><>::
+wall-8 - 2 tiles tall-transparency.png::CompressedTexture2D::9024086400021984105::1701302773::1701302817::1::::<><>::
+wall-8 - 2 tiles tall.png::CompressedTexture2D::2582529748311305255::1701302773::1701302817::1::::<><>::
+water.tres::AnimatedTexture::3699713402159966089::1701302773::0::1::::<><>::uid://bc185gd5pnkt8
+::res://Assets/mystic_woods_free_2.1/::1701313987
+::res://Assets/mystic_woods_free_2.1/sprites/::1701313987
+::res://Assets/mystic_woods_free_2.1/sprites/characters/::1701314024
+player.png::CompressedTexture2D::7096041709674447950::1688676040::1701314024::1::::<><>::
+skeleton.png::CompressedTexture2D::9205279318057606942::1688676040::1701314024::1::::<><>::
+slime.png::CompressedTexture2D::4672604501437642427::1688676040::1701314024::1::::<><>::
+::res://Assets/mystic_woods_free_2.1/sprites/objects/::1701314024
+chest_01.png::CompressedTexture2D::3726639779616870907::1688676040::1701314024::1::::<><>::
+chest_02.png::CompressedTexture2D::3528401089272085952::1688676040::1701314024::1::::<><>::
+objects.png::CompressedTexture2D::8744469041926682451::1688676040::1701314024::1::::<><>::
+rock_in_water_01-sheet.png::CompressedTexture2D::3818234706380203724::1688676040::1701314024::1::::<><>::
+rock_in_water_01.png::CompressedTexture2D::1924779095983622374::1688676040::1701314024::1::::<><>::
+rock_in_water_02.png::CompressedTexture2D::3932395410829246021::1688676040::1701314024::1::::<><>::
+rock_in_water_03.png::CompressedTexture2D::1566214568009045394::1688676040::1701314024::1::::<><>::
+rock_in_water_04.png::CompressedTexture2D::7829713069305505225::1688676040::1701314024::1::::<><>::
+rock_in_water_05.png::CompressedTexture2D::112882682150107767::1688676040::1701314024::1::::<><>::
+rock_in_water_06.png::CompressedTexture2D::1528005727661609780::1688676040::1701314024::1::::<><>::
+::res://Assets/mystic_woods_free_2.1/sprites/particles/::1701314024
+dust_particles_01.png::CompressedTexture2D::674489171442592389::1688676040::1701314024::1::::<><>::
+::res://Assets/mystic_woods_free_2.1/sprites/tilesets/::1701314024
+decor_8x8.png::CompressedTexture2D::38202587609400376::1688676040::1701314024::1::::<><>::
+decor_16x16.png::CompressedTexture2D::997276621798154969::1688676040::1701314024::1::::<><>::
+fences.png::CompressedTexture2D::2779352652695319765::1688676040::1701314024::1::::<><>::
+grass.png::CompressedTexture2D::4742052650857968716::1688676040::1701314024::1::::<><>::
+plains.png::CompressedTexture2D::5204142112693671792::1688676040::1701314024::1::::<><>::
+water1.png::CompressedTexture2D::5014952904032214934::1688676040::1701314024::1::::<><>::
+water2.png::CompressedTexture2D::2269940984790887488::1688676040::1701314024::1::::<><>::
+water3.png::CompressedTexture2D::1587142061502443793::1688676040::1701314024::1::::<><>::
+water4.png::CompressedTexture2D::5047364516418717217::1688676040::1701314024::1::::<><>::
+water5.png::CompressedTexture2D::5409378404512735961::1688676040::1701314024::1::::<><>::
+water6.png::CompressedTexture2D::8469040618973398616::1688676040::1701314024::1::::<><>::
+water_decorations.png::CompressedTexture2D::3361825056996476622::1688676040::1701314024::1::::<><>::
+water_lillies.png::CompressedTexture2D::8709614117613578878::1688676040::1701314024::1::::<><>::
+::res://Assets/mystic_woods_free_2.1/sprites/tilesets/floors/::1701314024
+carpet.png::CompressedTexture2D::8302945626321529016::1688676040::1701314024::1::::<><>::
+flooring.png::CompressedTexture2D::7263185770607122769::1688676040::1701314024::1::::<><>::
+wooden.png::CompressedTexture2D::4912975967515586319::1688676040::1701314024::1::::<><>::
+::res://Assets/mystic_woods_free_2.1/sprites/tilesets/walls/::1701314024
+walls.png::CompressedTexture2D::6107712343698881989::1688676040::1701314024::1::::<><>::
+wooden_door.png::CompressedTexture2D::3181023224316320079::1688676040::1701314024::1::::<><>::
+wooden_door_b.png::CompressedTexture2D::866795250926701304::1688676040::1701314024::1::::<><>::
+::res://Assets/Sprout Lands - Sprites - Basic pack/::1701873789
+::res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/::1701873789
+read_me.txt::TextFile::-1::1701873789::0::1::::<><>::
+::res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Characters/::1701873789
+Basic Charakter Actions.png::CompressedTexture2D::660304693152900538::1701873789::1701873789::1::::<><>::
+Basic Charakter Spritesheet.png::CompressedTexture2D::1222443959585142533::1701873789::1701873789::1::::<><>::
+Egg_And_Nest.png::CompressedTexture2D::7163718035457221217::1701873789::1701873789::1::::<><>::
+Free Chicken Sprites.png::CompressedTexture2D::7233492644983434254::1701873789::1701873789::1::::<><>::
+Free Cow Sprites.png::CompressedTexture2D::4806670317684186260::1701873789::1701873789::1::::<><>::
+Tools.png::CompressedTexture2D::5640078452434971822::1701873789::1701873789::1::::<><>::
+::res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Objects/::1701873789
+Basic Furniture.png::CompressedTexture2D::7944123515580181663::1701873789::1701873789::1::::<><>::
+Basic Grass Biom things 1.png::CompressedTexture2D::5556252677902341324::1701873789::1701873789::1::::<><>::
+Basic Plants.png::CompressedTexture2D::3974243815983422919::1701873789::1701873789::1::::<><>::
+Basic tools and meterials.png::CompressedTexture2D::2762847204861359157::1701873789::1701873789::1::::<><>::
+Chest.png::CompressedTexture2D::3175275622460466434::1701873789::1701873789::1::::<><>::
+Egg item.png::CompressedTexture2D::1645798795532334098::1701873789::1701873789::1::::<><>::
+Free_Chicken_House.png::CompressedTexture2D::6168200046784826186::1701873789::1701873789::1::::<><>::
+Paths.png::CompressedTexture2D::2319313839276735073::1701873789::1701873789::1::::<><>::
+Simple Milk and grass item.png::CompressedTexture2D::3284044733002601386::1701873789::1701873789::1::::<><>::
+Wood Bridge.png::CompressedTexture2D::5550072050336196575::1701873789::1701873789::1::::<><>::
+::res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Sprout Lands color pallet/::1701873789
+Sprout Lands defautlt palette snip.PNG::CompressedTexture2D::3841524766167464767::1701873789::1701873789::1::::<><>::
+Sprout Lands defautlt palette.png::CompressedTexture2D::6232284504170066204::1701873789::1701873789::1::::<><>::
+::res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/::1701873789
+Fences.png::CompressedTexture2D::709646735858542809::1701873789::1701873789::1::::<><>::
+Grass.png::CompressedTexture2D::4558757921125111226::1701873789::1701873789::1::::<><>::
+Hills.png::CompressedTexture2D::6977920152314674328::1701873789::1701873789::1::::<><>::
+Tilled Dirt.png::CompressedTexture2D::2058792416655721967::1701873789::1701873789::1::::<><>::
+Water.png::CompressedTexture2D::2014236982720194957::1701873789::1701873789::1::::<><>::
+Wooden House.png::CompressedTexture2D::1045563369449867054::1701873789::1701873789::1::::<><>::
+::res://Assets/Sprout Lands - UI Pack - Basic pack/::1701313987
+::res://Assets/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/::1701873692
+read_me.txt::TextFile::-1::1701873692::0::1::::<><>::
+::res://Assets/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/Sprite sheets/::1701873692
+Setting menu.png::CompressedTexture2D::5015585748812839347::1701873692::1701314024::1::::<><>::
+Sprite sheet for Basic Pack.png::CompressedTexture2D::8261888175168461848::1701873692::1701314024::1::::<><>::
+UI Big Play Button.png::CompressedTexture2D::7556963213796643769::1701873692::1701314024::1::::<><>::
+UI Settings Buttons.png::CompressedTexture2D::2536508289618539719::1701873692::1701314024::1::::<><>::
+::res://Assets/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/::1701873692
+Small Square Buttons.png::CompressedTexture2D::2693392051524345955::1701873692::1701314024::1::::<><>::
+Square Buttons 19x26.png::CompressedTexture2D::4058896897367168553::1701873692::1701314024::1::::<><>::
+Square Buttons 26x19.png::CompressedTexture2D::7084102569548102860::1701873692::1701314024::1::::<><>::
+Square Buttons 26x26.png::CompressedTexture2D::7616584118531893394::1701873692::1701314024::1::::<><>::
+::res://Assets/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/::1701873692
+dialog box big.png::CompressedTexture2D::8821641496306462083::1701873692::1701314024::1::::<><>::
+dialog box character finished talking click to continue indicator - spritesheet .png::CompressedTexture2D::6177664639194155885::1701873692::0::1::::<><>::
+dialog box medium.png::CompressedTexture2D::7109184395253118902::1701873692::1701314024::1::::<><>::
+dialog box small.png::CompressedTexture2D::7072043357820157395::1701873692::1701314024::1::::<><>::
+dialog box.png::CompressedTexture2D::593918302477128569::1701873692::1701314024::1::::<><>::
+Premade dialog box  big.png::CompressedTexture2D::839133935636166187::1701873692::1701314024::1::::<><>::
+Premade dialog box medium.png::CompressedTexture2D::4201903564568245874::1701873692::1701314024::1::::<><>::
+Premade dialog box small.png::CompressedTexture2D::914330166979753318::1701873692::1701314024::1::::<><>::
+::res://Assets/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Dialouge UI/Emotes/::1701873692
+Teemo Basic emote animations sprite sheet.png::CompressedTexture2D::9038091364498409587::1701873692::1701314024::1::::<><>::
+::res://Assets/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/::1701873692
+All Icons.png::CompressedTexture2D::2409658635024260326::1701873692::1701314024::1::::<><>::
+white icons.png::CompressedTexture2D::7497751030298142210::1701873692::1701314024::1::::<><>::
+::res://Assets/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/special icons/::1701873692
+Small Happines-Sadness icons.png::CompressedTexture2D::4244387397211830373::1701873692::1701314024::1::::<><>::
+Special Icons.png::CompressedTexture2D::2460307902234102419::1701873692::1701314024::1::::<><>::
+::res://Assets/Sprout Lands - UI Pack - Basic pack/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/::1701873692
+Catpaw holding Mouse icon.png::CompressedTexture2D::2571031522023279352::1701873692::1701314024::1::::<><>::
+Catpaw Mouse icon.png::CompressedTexture2D::6264644660382926869::1701873692::1701314024::1::::<><>::
+Catpaw pointing Mouse icon.png::CompressedTexture2D::6724719046160893250::1701873692::1701314024::1::::<><>::
+Triangle Mouse icon 1.png::CompressedTexture2D::6175055992124450358::1701873692::1701314024::1::::<><>::
+Triangle Mouse icon 2.png::CompressedTexture2D::4488425326223728073::1701873692::1701314024::1::::<><>::
+Triangle Mouse icon 3.png::CompressedTexture2D::7827686965969151129::1701873692::1701314024::1::::<><>::
+::res://Scenes/::1702738580
+World.tscn::PackedScene::9218305275917734317::1702738580::0::1::::<><>::uid://b68pymtpge2qm::::res://Scenes/Player/Player.tscn<>uid://ba213e8506yik::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames- transparency.png<>uid://de4wnmk6ucvf2::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames-.png<>uid://cjd6pj8bbu7mm::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Terrain2.png
+::res://Scenes/Player/::1702738580
+Dash.tscn::PackedScene::-1::1688736962::0::1::::<><>::
+Player.tscn::PackedScene::4631353576622516024::1702738580::0::1::::<><>::res://Scripts/Player.gd<>uid://c8dm1gmqiv6ms::::res://Assets/mystic_woods_free_2.1/sprites/characters/player.png
+Slime.tscn::PackedScene::-1::1700155412::0::1::::<><>::
+::res://Scripts/::1701314017
+Game.gd::GDScript::-1::1701302773::0::1::::<>Node<>::
+Player.gd::GDScript::-1::1700074030::0::1::::<>CharacterBody2D<>::
+Slime.gd::GDScript::-1::1700076890::0::1::::<>CharacterBody2D<>::
+::res://Scripts/States/::1688676764

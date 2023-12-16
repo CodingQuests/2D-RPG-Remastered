@@ -1,0 +1,11 @@
+[gd_resource type="AnimatedTexture" load_steps=3 format=3 uid="uid://bsyf0erp2r6un"]
+
+[ext_resource type="Texture2D" uid="uid://bc185gd5pnkt8" path="res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/wall-8 - 2 tiles tall.png" id="1_uu8yj"]
+[ext_resource type="Texture2D" uid="uid://d1tlnctir8wur" path="res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/wall-8 - 2 tiles tall-transparency.png" id="2_vxg4i"]
+
+
+[resource]
+frames = 2
+frame_0/texture = ExtResource("1_uu8yj")
+frame_1/texture = ExtResource("2_vxg4i")
+frame_1/duration = 1.0
