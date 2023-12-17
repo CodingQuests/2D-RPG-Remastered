@@ -1,2 +1,5 @@
 res://Scenes/Player/Player.tscn
 res://Scenes/World.tscn
+res://Scenes/Player/Slime.tscn
+res://Scripts/Player.gd
+res://Scenes/Player/Boar.tscn

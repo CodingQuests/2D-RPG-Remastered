@@ -66,6 +66,7 @@ func finishDash():
 func _on_attack_detector_area_body_entered(body):
 	if "mob" in body.name:
 		body.hit()
+	print(body.name)
 
 
 func _on_animation_tree_animation_finished(anim_name):
