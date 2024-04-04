@@ -1,0 +1,236 @@
+[gd_scene load_steps=10 format=3 uid="uid://bl2vuftmiy71b"]
+
+[ext_resource type="FontFile" uid="uid://d22luwsc6fmuu" path="res://Assets/Font/PixeloidSansBold-RpeJo.ttf" id="1_p2lwh"]
+[ext_resource type="Script" path="res://Scenes/Player/inv/Inventory.gd" id="1_tdrom"]
+[ext_resource type="Script" path="res://Scenes/Player/inv/InvContainer.gd" id="2_u5ek3"]
+[ext_resource type="PackedScene" uid="uid://dnfw3hgqa5hk3" path="res://Scenes/Player/inv/ItemInfo.tscn" id="3_x85ns"]
+[ext_resource type="StyleBox" uid="uid://callei1na7eyf" path="res://Global/Slot.tres" id="5_wobtn"]
+[ext_resource type="Texture2D" uid="uid://c4kfby7ysuinn" path="res://Assets/Items/Wooden_Weapon1.png" id="6_qgpre"]
+
+[sub_resource type="GDScript" id="GDScript_qpyew"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	text = \"Gold: \" + str(Inv.gold)
+"
+
+[sub_resource type="GDScript" id="GDScript_r2kob"]
+script/source = "extends Control
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if Inv.Equiped[\"RightHand\"]:
+		#Equip Slot has item
+		$RightHand/Icon.texture = Inv.Equiped[\"RightHand\"][\"Icon\"]
+		$RightHand.ItemName = Inv.Equiped[\"RightHand\"][\"Name\"]
+		$RightHand.hasItem = true
+		$RightHand/Icon.show()
+	else:
+		$RightHand.hasItem = false
+		$RightHand/Icon.hide()
+		
+"
+
+[sub_resource type="GDScript" id="GDScript_e80p4"]
+script/source = "extends Panel
+
+var ItemName = \"\"
+
+var hasItem = false
+var mouseEntered = false
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if hasItem == true:
+		get_node(\"Icon\").show()
+	else:
+		get_node(\"Icon\").hide()
+
+func _on_mouse_entered():
+	if hasItem == true:
+		mouseEntered = true
+func _on_mouse_exited():
+	mouseEntered = false
+func _input(event):
+	if event.is_action_pressed(\"LeftClick\"):
+		if mouseEntered:
+			Inv.Equiped[\"RightHand\"] = {}
+			Inv.addItem(ItemName)
+"
+
+[node name="Inventory" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_tdrom")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 88.0
+offset_right = 1024.0
+offset_bottom = 144.0
+theme_override_fonts/font = ExtResource("1_p2lwh")
+theme_override_font_sizes/font_size = 36
+text = "Inventory"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 840.0
+offset_top = 128.0
+offset_right = 1040.0
+offset_bottom = 184.0
+theme_override_fonts/font = ExtResource("1_p2lwh")
+theme_override_font_sizes/font_size = 18
+text = "Equipment"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gold" type="Label" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 128.0
+offset_right = 168.0
+offset_bottom = 151.0
+theme_override_font_sizes/font_size = 18
+text = "Gold"
+script = SubResource("GDScript_qpyew")
+
+[node name="InvContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 192.0
+offset_right = 560.0
+offset_bottom = 328.0
+scale = Vector2(2, 2)
+columns = 6
+script = ExtResource("2_u5ek3")
+
+[node name="ItemInfo" parent="." instance=ExtResource("3_x85ns")]
+layer = 2
+
+[node name="Equipment" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 896.0
+offset_top = 168.0
+offset_right = 936.0
+offset_bottom = 208.0
+scale = Vector2(1.5, 1.5)
+script = SubResource("GDScript_r2kob")
+
+[node name="Head" type="Panel" parent="Equipment"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 48.0
+offset_bottom = 48.0
+theme_override_styles/panel = ExtResource("5_wobtn")
+script = SubResource("GDScript_e80p4")
+
+[node name="Icon" type="Sprite2D" parent="Equipment/Head"]
+position = Vector2(15.5, 16)
+texture = ExtResource("6_qgpre")
+
+[node name="RightHand" type="Panel" parent="Equipment"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 96.0
+theme_override_styles/panel = ExtResource("5_wobtn")
+script = SubResource("GDScript_e80p4")
+
+[node name="Icon" type="Sprite2D" parent="Equipment/RightHand"]
+position = Vector2(15.5, 16)
+texture = ExtResource("6_qgpre")
+
+[node name="Body" type="Panel" parent="Equipment"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 64.0
+offset_right = 48.0
+offset_bottom = 96.0
+theme_override_styles/panel = ExtResource("5_wobtn")
+script = SubResource("GDScript_e80p4")
+
+[node name="Icon" type="Sprite2D" parent="Equipment/Body"]
+position = Vector2(15.5, 16)
+texture = ExtResource("6_qgpre")
+
+[node name="LeftHand" type="Panel" parent="Equipment"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 0
+offset_left = -32.0
+offset_top = 64.0
+offset_bottom = 96.0
+theme_override_styles/panel = ExtResource("5_wobtn")
+script = SubResource("GDScript_e80p4")
+
+[node name="Icon" type="Sprite2D" parent="Equipment/LeftHand"]
+position = Vector2(15.5, 16)
+texture = ExtResource("6_qgpre")
+
+[node name="Legs" type="Panel" parent="Equipment"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 112.0
+offset_right = 48.0
+offset_bottom = 144.0
+theme_override_styles/panel = ExtResource("5_wobtn")
+script = SubResource("GDScript_e80p4")
+
+[node name="Icon" type="Sprite2D" parent="Equipment/Legs"]
+position = Vector2(15.5, 16)
+texture = ExtResource("6_qgpre")
+
+[node name="Feet" type="Panel" parent="Equipment"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 160.0
+offset_right = 48.0
+offset_bottom = 192.0
+theme_override_styles/panel = ExtResource("5_wobtn")
+script = SubResource("GDScript_e80p4")
+
+[node name="Icon" type="Sprite2D" parent="Equipment/Feet"]
+position = Vector2(15.5, 16)
+texture = ExtResource("6_qgpre")
+
+[connection signal="mouse_entered" from="Equipment/Head" to="Equipment/Head" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Equipment/Head" to="Equipment/Head" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Equipment/RightHand" to="Equipment/RightHand" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Equipment/RightHand" to="Equipment/RightHand" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Equipment/Body" to="Equipment/Body" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Equipment/Body" to="Equipment/Body" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Equipment/LeftHand" to="Equipment/LeftHand" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Equipment/LeftHand" to="Equipment/LeftHand" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Equipment/Legs" to="Equipment/Legs" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Equipment/Legs" to="Equipment/Legs" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Equipment/Feet" to="Equipment/Feet" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Equipment/Feet" to="Equipment/Feet" method="_on_mouse_exited"]

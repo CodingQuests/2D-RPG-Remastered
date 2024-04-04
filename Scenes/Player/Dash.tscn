@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://gtvxcnamta55"]
 
-[ext_resource type="Texture2D" uid="uid://c8dm1gmqiv6ms" path="res://Assets/mystic_woods_free_2.1/sprites/characters/player.png" id="1_bquj7"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gv3kp"]
 
 [sub_resource type="GDScript" id="GDScript_vuamd"]
 script/source = "extends Sprite2D
@@ -17,8 +17,7 @@ func _physics_process(delta):
 
 [node name="Sprite2D" type="Sprite2D"]
 position = Vector2(0, -19)
-texture = ExtResource("1_bquj7")
+texture = SubResource("CompressedTexture2D_gv3kp")
 hframes = 6
-vframes = 10
-frame = 16
+vframes = 4
 script = SubResource("GDScript_vuamd")

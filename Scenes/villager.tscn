@@ -1,0 +1,243 @@
+[gd_scene load_steps=23 format=3 uid="uid://depxjboqlf2e6"]
+
+[ext_resource type="Texture2D" uid="uid://6gi0fakxdnak" path="res://Assets/Character/Villager/Idle/Villager_Idle.png" id="1_088uc"]
+[ext_resource type="Texture2D" uid="uid://clwvl5fvh5f4x" path="res://Assets/Character/Villager/Idle/Equipment/Villager_Idle_Beard.png" id="2_jsrgm"]
+[ext_resource type="Texture2D" uid="uid://cqv8vrdq7jsji" path="res://Assets/Character/Villager/Idle/Equipment/Villager_Idle_Hair.png" id="2_uhbgq"]
+[ext_resource type="Texture2D" uid="uid://0o0toxrlchb" path="res://Assets/GUI.png" id="4_na541"]
+
+[sub_resource type="GDScript" id="GDScript_ljily"]
+script/source = "extends Area2D
+
+@onready var label = $Panel/Label
+@onready var panel = $Panel
+signal finishedDialogue()
+signal LineChangedDialogue(currentLine)
+var currentLine = 0
+@export var Storytext :PackedStringArray
+@onready var timer = $Timer
+@onready var Quest = preload(\"res://Scenes/quest.tscn\")
+func _ready():
+	$Sprite.play(\"Idle\")
+	$Beard.play(\"Idle\")
+	$Hair.play(\"Idle\")
+	
+
+
+func _on_body_entered(body):
+	if \"Player\" in body.name:
+		$Panel.show()
+		type()
+		Game.CutSceneCurrent = true
+func type():
+	self.show()
+	get_tree().paused = true
+	if currentLine < Storytext.size():
+		var lines = round((Storytext[currentLine].length())/15)
+		label.text = \"\"
+		var timeLength = (Storytext[currentLine].length())/10
+		label.visible_ratio = 0
+		var tween = create_tween()
+		label.text = \"[center]\" + Storytext[currentLine] + \"[/center]\"
+		tween.tween_property(label, \"visible_ratio\", 1, timeLength)
+		tween.set_trans(Tween.TRANS_LINEAR)
+		tween.tween_callback(startTimer)
+		
+		panel.position.y -= lines*2
+		panel.size.y = label.size.y + lines*4 + 5
+	else:
+		finish()
+		
+	LineChangedDialogue.emit(currentLine)
+	
+func finish():
+	panel.hide()
+	label.hide()
+	get_tree().paused = false
+	
+	finishedDialogue.emit()
+	Game.CutSceneCurrent = false
+	var QuestTemp = Quest.instantiate()
+	QuestTemp.get_node(\"QuestTitle\").text = \"Quest from the Villager!\"
+	QuestTemp.get_node(\"QuestDescription\").text = \"Will you please go kill: \\n 10 Boars\"
+	QuestTemp.questNum = 1
+	get_parent().add_child(QuestTemp)
+
+func startTimer():
+	timer.start()
+
+
+func _on_timer_timeout():
+	label.visible_ratio = 0
+	currentLine += 1
+	timer.stop()
+	type()
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bdpgf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tr8e1"]
+atlas = ExtResource("1_088uc")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_307si"]
+atlas = ExtResource("1_088uc")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8rmt"]
+atlas = ExtResource("1_088uc")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0y8py"]
+atlas = ExtResource("1_088uc")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_se143"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tr8e1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_307si")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8rmt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0y8py")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6uss"]
+atlas = ExtResource("2_jsrgm")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0swiy"]
+atlas = ExtResource("2_jsrgm")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r68ja"]
+atlas = ExtResource("2_jsrgm")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q7hik"]
+atlas = ExtResource("2_jsrgm")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_63wnd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6uss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0swiy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r68ja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q7hik")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v62ei"]
+atlas = ExtResource("2_uhbgq")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahns6"]
+atlas = ExtResource("2_uhbgq")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjogb"]
+atlas = ExtResource("2_uhbgq")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qbem2"]
+atlas = ExtResource("2_uhbgq")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rwiq3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v62ei")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahns6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjogb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qbem2")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jr7f1"]
+texture = ExtResource("4_na541")
+texture_margin_left = 3.78366
+texture_margin_top = 2.83774
+texture_margin_right = 2.83774
+texture_margin_bottom = 2.56748
+region_rect = Rect2(145, 65, 46, 14)
+
+[node name="Villager" type="Area2D"]
+process_mode = 3
+script = SubResource("GDScript_ljily")
+Storytext = PackedStringArray("Hello Player! Welcome to my world!", "I hope your well", "I have a really important quest for you! Will you accept my amazing quest?")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_bdpgf")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_se143")
+animation = &"Idle"
+
+[node name="Beard" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_63wnd")
+animation = &"Idle"
+
+[node name="Hair" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_rwiq3")
+animation = &"Idle"
+frame = 1
+frame_progress = 0.75289
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+offset_left = 3.0
+offset_top = -69.0
+offset_right = 130.0
+offset_bottom = -36.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_jr7f1")
+
+[node name="Label" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 125.0
+offset_bottom = 31.0
+mouse_filter = 1
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "aaaaaaaaaaaaaaaaaa"
+fit_content = true
+scroll_active = false
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

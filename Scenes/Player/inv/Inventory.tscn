@@ -1,0 +1,124 @@
+[gd_scene load_steps=9 format=3 uid="uid://bfrpxjouc78yk"]
+
+[ext_resource type="Script" path="res://Scenes/Player/inv/Inventory.gd" id="1_qtfue"]
+[ext_resource type="Script" path="res://Scenes/Player/inv/InvContainer.gd" id="2_bippo"]
+[ext_resource type="PackedScene" uid="uid://dnfw3hgqa5hk3" path="res://Scenes/Player/inv/ItemInfo.tscn" id="3_gsxoa"]
+
+[sub_resource type="Animation" id="Animation_frq7u"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -300)]
+}
+
+[sub_resource type="Animation" id="Animation_xh5ql"]
+resource_name = "TransIn"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -300), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3v3vb"]
+resource_name = "TransOut"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 300)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_36kjf"]
+_data = {
+"RESET": SubResource("Animation_frq7u"),
+"TransIn": SubResource("Animation_xh5ql"),
+"TransOut": SubResource("Animation_3v3vb")
+}
+
+[sub_resource type="GDScript" id="GDScript_qpyew"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	text = \"Gold: \" + str(Global.gold)
+"
+
+[node name="Inventory" type="CanvasLayer"]
+process_mode = 3
+offset = Vector2(0, -300)
+transform = Transform2D(1, 0, 0, 1, 0, -300)
+script = ExtResource("1_qtfue")
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_36kjf")
+}
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 64.0
+offset_top = 24.0
+offset_right = 512.0
+offset_bottom = 272.0
+
+[node name="Title" type="Label" parent="."]
+offset_left = 232.0
+offset_top = 36.0
+offset_right = 336.0
+offset_bottom = 62.0
+text = "Inventory"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Close" type="Button" parent="."]
+offset_left = 448.0
+offset_top = 48.0
+offset_right = 498.0
+offset_bottom = 80.0
+text = "Close"
+
+[node name="Gold" type="Label" parent="."]
+offset_left = 72.0
+offset_top = 60.0
+offset_right = 112.0
+offset_bottom = 83.0
+script = SubResource("GDScript_qpyew")
+
+[node name="InvContainer" type="GridContainer" parent="."]
+offset_left = 168.0
+offset_top = 100.0
+offset_right = 392.0
+offset_bottom = 236.0
+columns = 6
+script = ExtResource("2_bippo")
+
+[node name="ItemInfo" parent="." instance=ExtResource("3_gsxoa")]
+
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]

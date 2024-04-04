@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://c51s0ody0w0ul"]
+
+[ext_resource type="FontFile" uid="uid://d22luwsc6fmuu" path="res://Assets/Font/PixeloidSansBold-RpeJo.ttf" id="1_7wmi5"]
+
+[sub_resource type="GDScript" id="GDScript_5rtpp"]
+script/source = "extends Control
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	if Game.quest1Accepted:
+		$Quests.text = \"Boars Slain: \" + str(Game.BoarsSlain)
+	else:
+		$Quests.text = \"No Quests Active at the moment!\""
+
+[node name="Quests" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = SubResource("GDScript_5rtpp")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 88.0
+offset_right = 1024.0
+offset_bottom = 144.0
+theme_override_fonts/font = ExtResource("1_7wmi5")
+theme_override_font_sizes/font_size = 36
+text = "Quests"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quests" type="Label" parent="."]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 192.0
+offset_right = 896.0
+offset_bottom = 240.0
+theme_override_fonts/font = ExtResource("1_7wmi5")
+theme_override_font_sizes/font_size = 18
+text = "Quests"
+horizontal_alignment = 1
+vertical_alignment = 1

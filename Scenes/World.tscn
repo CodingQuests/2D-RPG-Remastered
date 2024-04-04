@@ -1,10 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://d4loe2deo4xnp"]
+[gd_scene load_steps=12 format=3 uid="uid://d4loe2deo4xnp"]
 
 [ext_resource type="PackedScene" uid="uid://b68pymtpge2qm" path="res://Scenes/Player/Player.tscn" id="1_tfggm"]
 [ext_resource type="Texture2D" uid="uid://ba213e8506yik" path="res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames- transparency.png" id="3_tqgjl"]
 [ext_resource type="Texture2D" uid="uid://de4wnmk6ucvf2" path="res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames-.png" id="4_r0k13"]
 [ext_resource type="PackedScene" uid="uid://cj1ge26e5lmgh" path="res://Scenes/Player/Boar.tscn" id="5_4ej65"]
 [ext_resource type="Texture2D" uid="uid://cjd6pj8bbu7mm" path="res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Terrain2.png" id="5_8d5ip"]
+[ext_resource type="PackedScene" uid="uid://dxnakdkshmjf3" path="res://Scenes/Player/GUI.tscn" id="5_llxku"]
+[ext_resource type="PackedScene" uid="uid://depxjboqlf2e6" path="res://Scenes/villager.tscn" id="6_d105x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dic0l"]
 texture = ExtResource("3_tqgjl")
@@ -1661,12 +1663,18 @@ layer_1/name = "Water"
 layer_1/tile_data = PackedInt32Array(327691, 6, 1, 262155, 6, 1, 196619, 1376262, 2, 327690, 6, 1, 262154, 6, 1, 196618, 6, 1, 327689, 6, 1, 262153, 6, 1, 196617, 6, 1, 327688, 6, 1, 262152, 6, 1, 196616, 6, 1, 327687, 6, 1, 262151, 6, 1, 196615, 6, 1, 262150, 6, 1, 196614, 327686, 4, 131078, 327686, 3, 131079, 1376262, 5, 131080, 1376262, 5, 327686, 6, 1, 393224, 327686, 6, 393223, 851974, 3, 393222, 851974, 6, 131081, 1376262, 5, 393225, 6, 1, 131082, 1376262, 5, 393226, 851974, 6, 131083, 1376262, 3, 393227, 851974, 3, 196620, 1376262, 3, 262156, 1376262, 2, 327692, 851974, 6, 393228, 851974, 5, 458762, 851974, 5, 458761, 851974, 3, 458760, 327686, 7, 262149, 6, 1, 327685, 6, 1, 327684, 327686, 5, 262148, 327686, 5, 196612, 327686, 3, 196613, 1376262, 5, 393221, 6, 1, 393220, 327686, 5, 458758, 851974, 5, 458757, 851974, 3, 458756, 327686, 7, 262157, 1376262, 3, 786452, 6, 1, 720916, 6, 1, 655380, 6, 1, 589844, 6, 1, 786451, 6, 1, 720915, 6, 1, 655379, 6, 1, 589843, 6, 1, 655378, 327686, 5, 589842, 327686, 5, 524306, 327686, 3, 524307, 327686, 4, 524308, 6, 1, 720914, 327686, 5, 786450, 327686, 5, 851988, 6, 1, 851987, 327686, 6, 851986, 327686, 7, 589845, 6, 1, 655381, 6, 1, 720917, 851974, 6, 786453, 851974, 7, 851989, 851974, 7, 917525, 851974, 5, 917524, 851974, 3, 917523, 327686, 7, 524309, 1376262, 2, 458771, 327686, 3, 458772, 1376262, 5, 458773, 1376262, 3, 524310, 1376262, 3, 589846, 1376262, 2, 655382, 6, 1, 720918, 851974, 3, 589847, 1376262, 3, 655383, 851974, 7, 720919, 851974, 5, 851977, 6, 1, 786441, 1376262, 2, 851976, 6, 1, 786440, 6, 1, 851975, 6, 1, 786439, 6, 1, 851974, 6, 1, 786438, 6, 1, 851973, 327686, 5, 786437, 327686, 5, 720901, 327686, 3, 720902, 1376262, 5, 720903, 1376262, 5, 917511, 851974, 3, 917510, 851974, 3, 917509, 327686, 7, 720904, 1376262, 5, 917512, 851974, 3, 720905, 1376262, 3, 917513, 851974, 3, 786442, 1376262, 3, 851978, 851974, 7, 917514, 851974, 5, 131094, 1376262, 2, 131093, 6, 1, 131092, 6, 1, 131091, 6, 1, 131090, 6, 1, 131089, 6, 1, 196626, 851974, 3, 196625, 851974, 3, 196624, 327686, 7, 131088, 327686, 5, 65552, 327686, 3, 65553, 1376262, 5, 65554, 1376262, 5, 196627, 851974, 3, 65555, 1376262, 5, 196628, 851974, 3, 65556, 1376262, 5, 196629, 851974, 3, 65557, 1376262, 5, 196630, 851974, 3, 65558, 1376262, 3, 131095, 1376262, 3, 196631, 851974, 5)
 
 [node name="Player" parent="." instance=ExtResource("1_tfggm")]
+position = Vector2(75, 87)
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 zoom = Vector2(3, 3)
 limit_left = 0
 limit_top = 0
 
+[node name="GUI" parent="Player" instance=ExtResource("5_llxku")]
+
 [node name="Boar mob" parent="." node_paths=PackedStringArray("player") instance=ExtResource("5_4ej65")]
-position = Vector2(136, 81)
+position = Vector2(105, 211)
 player = NodePath("../Player")
+
+[node name="Villager" parent="." instance=ExtResource("6_d105x")]
+position = Vector2(146, 87)

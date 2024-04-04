@@ -1,0 +1,96 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4cyoim416nt3"]
+
+[ext_resource type="Script" path="res://Scenes/Player/Inventory/main.gd" id="1_g6ib7"]
+[ext_resource type="Script" path="res://Scenes/Player/Inventory/inventory_slot.gd" id="1_tggo1"]
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g6ib7")
+
+[node name="LegsSlot" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+offset_left = 296.0
+offset_top = 320.0
+offset_right = 328.0
+offset_bottom = 352.0
+script = ExtResource("1_tggo1")
+type = 2
+
+[node name="FeetSlot" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+offset_left = 296.0
+offset_top = 376.0
+offset_right = 328.0
+offset_bottom = 408.0
+script = ExtResource("1_tggo1")
+type = 3
+
+[node name="WeaponSlot" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+offset_left = 360.0
+offset_top = 272.0
+offset_right = 392.0
+offset_bottom = 304.0
+script = ExtResource("1_tggo1")
+type = 4
+
+[node name="WeaponSlot2" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+offset_left = 224.0
+offset_top = 272.0
+offset_right = 256.0
+offset_bottom = 304.0
+script = ExtResource("1_tggo1")
+type = 4
+
+[node name="AccessorySlot" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+offset_left = 360.0
+offset_top = 320.0
+offset_right = 392.0
+offset_bottom = 352.0
+script = ExtResource("1_tggo1")
+type = 5
+
+[node name="HeadSlot" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+offset_left = 296.0
+offset_top = 224.0
+offset_right = 328.0
+offset_bottom = 256.0
+script = ExtResource("1_tggo1")
+
+[node name="ChestSlot" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+offset_left = 296.0
+offset_top = 272.0
+offset_right = 328.0
+offset_bottom = 304.0
+script = ExtResource("1_tggo1")
+type = 1
+
+[node name="Grid" type="GridContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+offset_left = 456.0
+offset_top = 176.0
+offset_right = 1000.0
+offset_bottom = 496.0
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 6

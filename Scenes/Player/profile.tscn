@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dihus2c0b17hi"]
+
+[ext_resource type="Script" path="res://Scripts/Player/Profile.gd" id="1_asu7y"]
+
+[node name="Profile" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_asu7y")
+
+[node name="stats_label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 232.0
+offset_right = 600.0
+offset_bottom = 243.0

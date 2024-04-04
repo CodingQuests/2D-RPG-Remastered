@@ -1,5 +1,7 @@
-res://Scenes/Player/Player.tscn
+res://Scenes/Player/GUI.tscn
+res://Global/Default.tres
+res://Scripts/Player/GUI.gd
 res://Scenes/World.tscn
-res://Scenes/Player/Slime.tscn
-res://Scripts/Player.gd
-res://Scenes/Player/Boar.tscn
+res://Scenes/Player/Inventory/Inventory.tscn
+res://Scenes/MainMenu.tscn
+res://Scenes/GameOver.tscn

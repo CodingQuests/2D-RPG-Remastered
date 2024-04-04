@@ -1,1 +1,3 @@
+Resource
+Theme
 AnimatedTexture

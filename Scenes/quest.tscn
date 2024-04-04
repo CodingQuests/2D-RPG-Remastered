@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://2pbf86vy6jjd"]
+
+[ext_resource type="Script" path="res://Scenes/questManager.gd" id="1_d27rw"]
+[ext_resource type="FontFile" uid="uid://d22luwsc6fmuu" path="res://Assets/Font/PixeloidSansBold-RpeJo.ttf" id="1_sdsob"]
+
+[node name="Quest" type="CanvasLayer"]
+script = ExtResource("1_d27rw")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 384.0
+offset_top = 168.0
+offset_right = 768.0
+offset_bottom = 384.0
+
+[node name="QuestTitle" type="Label" parent="."]
+offset_left = 392.0
+offset_top = 176.0
+offset_right = 760.0
+offset_bottom = 208.0
+theme_override_fonts/font = ExtResource("1_sdsob")
+theme_override_font_sizes/font_size = 18
+text = "Quest Title"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuestDescription" type="Label" parent="."]
+offset_left = 392.0
+offset_top = 216.0
+offset_right = 760.0
+offset_bottom = 248.0
+theme_override_fonts/font = ExtResource("1_sdsob")
+text = "Quest Description"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Accept" type="Button" parent="."]
+offset_left = 448.0
+offset_top = 312.0
+offset_right = 507.162
+offset_bottom = 344.0
+text = "Accept"
+
+[node name="Decline" type="Button" parent="."]
+offset_left = 624.0
+offset_top = 312.0
+offset_right = 689.162
+offset_bottom = 344.0
+text = "Decline"
+
+[connection signal="pressed" from="Accept" to="." method="_on_accept_pressed"]
+[connection signal="pressed" from="Decline" to="." method="_on_decline_pressed"]

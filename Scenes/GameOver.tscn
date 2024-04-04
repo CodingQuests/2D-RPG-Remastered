@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://6del4g1jlud2"]
+
+[sub_resource type="GDScript" id="GDScript_pmc2y"]
+script/source = "extends Node
+
+
+
+
+func _on_menu_pressed():
+	ChangeScene.changeScene(\"MainMenu\")
+
+
+func _on_retry_pressed():
+	ChangeScene.changeScene(\"World\")
+
+"
+
+[node name="GameOver" type="Node"]
+script = SubResource("GDScript_pmc2y")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 28.0
+offset_top = 13.0
+offset_right = 394.0
+offset_bottom = 217.0
+scale = Vector2(3, 3)
+
+[node name="Button Container" type="VBoxContainer" parent="."]
+offset_left = 283.0
+offset_top = 180.0
+offset_right = 483.0
+offset_bottom = 264.0
+scale = Vector2(3, 3)
+theme_override_constants/separation = 20
+
+[node name="Retry" type="Button" parent="Button Container"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+text = "Retry"
+
+[node name="Menu" type="Button" parent="Button Container"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+text = "Main Menu"
+
+[connection signal="pressed" from="Button Container/Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="Button Container/Menu" to="." method="_on_menu_pressed"]

@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://callei1na7eyf"]
+
+[ext_resource type="Texture2D" uid="uid://dblb5ji2l5p7a" path="res://Assets/ui_big_pieces.png" id="1_blts5"]
+
+[resource]
+texture = ExtResource("1_blts5")
+texture_margin_left = 14.8644
+texture_margin_top = 15.54
+texture_margin_right = 13.2428
+texture_margin_bottom = 13.9185
+region_rect = Rect2(75, 287.5, 40, 41)

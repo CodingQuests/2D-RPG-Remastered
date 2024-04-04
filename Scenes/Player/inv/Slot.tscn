@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://crqmi8igbr830"]
+
+[ext_resource type="Script" path="res://Scenes/Player/inv/Slot.gd" id="1_fethv"]
+[ext_resource type="Texture2D" uid="uid://dblb5ji2l5p7a" path="res://Assets/ui_big_pieces.png" id="1_q166k"]
+[ext_resource type="Texture2D" uid="uid://c4kfby7ysuinn" path="res://Assets/Items/Wooden_Weapon1.png" id="2_2jtq7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vmmge"]
+texture = ExtResource("1_q166k")
+texture_margin_left = 14.8644
+texture_margin_top = 15.54
+texture_margin_right = 13.2428
+texture_margin_bottom = 13.9185
+region_rect = Rect2(75.187, 329.135, 39.8635, 39.8635)
+
+[node name="Slot" type="Panel"]
+custom_minimum_size = Vector2(32, 32)
+offset_right = 32.0
+offset_bottom = 32.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_vmmge")
+script = ExtResource("1_fethv")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(15.5, 16)
+texture = ExtResource("2_2jtq7")
+
+[node name="Count" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 16.0
+offset_right = 28.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 10
+text = "1"
+horizontal_alignment = 2
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

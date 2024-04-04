@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://i2kkk83xthnh"]
+
+[ext_resource type="Texture2D" uid="uid://b5iy8rb6kmo5k" path="res://Pixel Adventure 1/Free/Items/Fruits/Apple.png" id="1_ihle1"]
+
+[sub_resource type="Animation" id="Animation_w0x8q"]
+resource_name = "Idle"
+length = 1.651
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+}
+
+[sub_resource type="Animation" id="Animation_huf3k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_botso"]
+_data = {
+"Idle": SubResource("Animation_w0x8q"),
+"RESET": SubResource("Animation_huf3k")
+}
+
+[node name="Item" type="Sprite2D"]
+scale = Vector2(3, 3)
+texture = ExtResource("1_ihle1")
+hframes = 17
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Idle"
+libraries = {
+"": SubResource("AnimationLibrary_botso")
+}

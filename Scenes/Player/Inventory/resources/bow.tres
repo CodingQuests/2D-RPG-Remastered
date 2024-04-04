@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://fwpn3e17euhy"]
+
+[ext_resource type="Script" path="res://Scenes/Player/Inventory/item_data.gd" id="1_rfrxc"]
+[ext_resource type="Texture2D" uid="uid://c3mff6f3clhyh" path="res://Scenes/Player/Inventory/sprites/Item__16.png" id="2_dxw15"]
+
+[resource]
+script = ExtResource("1_rfrxc")
+type = 4
+item_name = "Bow"
+item_damage = 10
+item_defense = 0
+description = "It's a bow!"
+item_texture = ExtResource("2_dxw15")
