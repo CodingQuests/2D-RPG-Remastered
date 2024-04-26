@@ -1676,5 +1676,29 @@ limit_top = 0
 position = Vector2(105, 211)
 player = NodePath("../Player")
 
+[node name="Boar mob2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("5_4ej65")]
+position = Vector2(-8, 80)
+player = NodePath("../Player")
+
+[node name="Boar mob3" parent="." node_paths=PackedStringArray("player") instance=ExtResource("5_4ej65")]
+position = Vector2(310, 25)
+player = NodePath("../Player")
+
+[node name="Boar mob4" parent="." node_paths=PackedStringArray("player") instance=ExtResource("5_4ej65")]
+position = Vector2(111, 0)
+player = NodePath("../Player")
+
+[node name="Boar mob5" parent="." node_paths=PackedStringArray("player") instance=ExtResource("5_4ej65")]
+position = Vector2(128, 330)
+player = NodePath("../Player")
+
+[node name="Boar mob6" parent="." node_paths=PackedStringArray("player") instance=ExtResource("5_4ej65")]
+position = Vector2(401, 316)
+player = NodePath("../Player")
+
+[node name="Boar mob7" parent="." node_paths=PackedStringArray("player") instance=ExtResource("5_4ej65")]
+position = Vector2(466, 75)
+player = NodePath("../Player")
+
 [node name="Villager" parent="." instance=ExtResource("6_d105x")]
 position = Vector2(146, 87)

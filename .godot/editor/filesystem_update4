@@ -1,8 +1,4 @@
 res://Scenes/World.tscn
 res://Global/Default.tres
 res://Scenes/Player/Player.tscn
-res://Scenes/Player/Boar.tscn
-res://Scenes/Player/GUI.tscn
-res://Scenes/Player/Inventory/Inventory.tscn
-res://Scenes/villager.tscn
 res://Scenes/Player/Dash.tscn

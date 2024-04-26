@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713965603
+::res://::1714154054
 export_presets.cfg::TextFile::-1::1710725062::0::1::::<><>::
 icon.svg::CompressedTexture2D::2508807028642169428::1700864962::1702837556::1::::<><>::
 ::res://Assets/::1713805619
@@ -123,28 +123,28 @@ Pig_Move.png::CompressedTexture2D::7363073177021203465::1702745770::1702745770::
 ::res://Assets/Monster Pack 21 (Bovine)/Spritesheets/Updated Piggy/::1711890645
 Piggy_Idle.png::CompressedTexture2D::7136411545611596402::1702745770::1702745770::1::::<><>::
 Piggy_Move.png::CompressedTexture2D::672812054766059999::1702745770::1702745770::1::::<><>::
-::res://Global/::1713894795
+::res://Global/::1713975876
 ChangeScene.gd::GDScript::-1::1702925792::0::1::::<>CanvasLayer<>::
 ChangeScene.tscn::PackedScene::3932461646787987698::1702925506::0::1::::<><>::res://Global/ChangeScene.gd
-Default.tres::Theme::4034479173093961964::1713894795::0::1::::<><>::uid://dblb5ji2l5p7a::::res://Assets/ui_big_pieces.png<>uid://bhseymqmxk2ax::::res://Assets/Font/PixeloidSans-nR3g1.ttf
+Default.tres::Theme::4034479173093961964::1713975876::0::1::::<><>::uid://dblb5ji2l5p7a::::res://Assets/ui_big_pieces.png<>uid://bhseymqmxk2ax::::res://Assets/Font/PixeloidSans-nR3g1.ttf
 Game.gd::GDScript::-1::1713833945::0::1::::<>Node<>::
 Inv.gd::GDScript::-1::1703513006::0::1::::<>Node<>::
 Slot.tres::StyleBoxTexture::4796225013720549989::1711741316::0::1::::<><>::uid://dblb5ji2l5p7a::::res://Assets/ui_big_pieces.png
 ::res://Global/Save/::1711890645
 Utils.gd::GDScript::-1::1704992714::0::1::::<>Node<>::
-::res://Scenes/::1713896202
+::res://Scenes/::1713991498
 GameOver.tscn::PackedScene::2182311331384987257::1713799350::0::1::::<><>::
 MainMenu.tscn::PackedScene::6230468281513937315::1713833945::0::1::::<><>::res://Scripts/MainMenu.gd<>uid://ba213e8506yik::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames- transparency.png<>uid://de4wnmk6ucvf2::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames-.png<>uid://cjd6pj8bbu7mm::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Terrain2.png
 quest.tscn::PackedScene::1926135872646998705::1703504400::0::1::::<><>::res://Scenes/questManager.gd<>uid://d22luwsc6fmuu::::res://Assets/Font/PixeloidSansBold-RpeJo.ttf
 questManager.gd::GDScript::-1::1703501670::0::1::::<>CanvasLayer<>::
-villager.tscn::PackedScene::7472395729813608427::1703513006::0::1::::<><>::uid://6gi0fakxdnak::::res://Assets/Character/Villager/Idle/Villager_Idle.png<>uid://clwvl5fvh5f4x::::res://Assets/Character/Villager/Idle/Equipment/Villager_Idle_Beard.png<>uid://cqv8vrdq7jsji::::res://Assets/Character/Villager/Idle/Equipment/Villager_Idle_Hair.png<>uid://0o0toxrlchb::::res://Assets/GUI.png
-World.tscn::PackedScene::9218305275917734317::1713896202::0::1::::<><>::uid://b68pymtpge2qm::::res://Scenes/Player/Player.tscn<>uid://ba213e8506yik::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames- transparency.png<>uid://de4wnmk6ucvf2::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames-.png<>uid://cj1ge26e5lmgh::::res://Scenes/Player/Boar.tscn<>uid://cjd6pj8bbu7mm::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Terrain2.png<>uid://dxnakdkshmjf3::::res://Scenes/Player/GUI.tscn<>uid://depxjboqlf2e6::::res://Scenes/villager.tscn
-::res://Scenes/Player/::1713896202
-Boar.tscn::PackedScene::5458587693107935099::1713896202::0::1::::<><>::res://Scripts/Slime.gd<>uid://cwoe5l8rw6k1a::::res://Assets/Monster Pack 21 (Bovine)/Spritesheets/Updated Boar/Boar_Attack.png<>uid://b2g7otyc1hs55::::res://Assets/Monster Pack 21 (Bovine)/Spritesheets/Updated Boar/Boar_Idle.png<>uid://bqb1pckjd6x1n::::res://Assets/Monster Pack 21 (Bovine)/Spritesheets/Updated Boar/Boar_Move.png
-Dash.tscn::PackedScene::461672494409179954::1703500314::0::1::::<><>::
-GUI.tscn::PackedScene::8800460397341642874::1713799350::0::1::::<><>::res://Scripts/Player/GUI.gd<>uid://d22luwsc6fmuu::::res://Assets/Font/PixeloidSansBold-RpeJo.ttf<>uid://dblb5ji2l5p7a::::res://Assets/ui_big_pieces.png<>uid://d4cyoim416nt3::::res://Scenes/Player/Inventory/Inventory.tscn<>uid://c51s0ody0w0ul::::res://Scenes/Player/quests.tscn<>uid://dihus2c0b17hi::::res://Scenes/Player/profile.tscn
+villager.tscn::PackedScene::7472395729813608427::1713990938::0::1::::<><>::uid://6gi0fakxdnak::::res://Assets/Character/Villager/Idle/Villager_Idle.png<>uid://clwvl5fvh5f4x::::res://Assets/Character/Villager/Idle/Equipment/Villager_Idle_Beard.png<>uid://cqv8vrdq7jsji::::res://Assets/Character/Villager/Idle/Equipment/Villager_Idle_Hair.png<>uid://0o0toxrlchb::::res://Assets/GUI.png
+World.tscn::PackedScene::9218305275917734317::1713991498::0::1::::<><>::uid://b68pymtpge2qm::::res://Scenes/Player/Player.tscn<>uid://ba213e8506yik::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames- transparency.png<>uid://de4wnmk6ucvf2::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Animated Terrains-8 frames-.png<>uid://cj1ge26e5lmgh::::res://Scenes/Player/Boar.tscn<>uid://cjd6pj8bbu7mm::::res://Assets/EPIC RPG World Pack - [FREE Demo]Ancient Ruins/EPIC RPG World Pack - [FREE Demo]Ancient Ruins - Copia/Tilesets/Tileset-Terrain2.png<>uid://dxnakdkshmjf3::::res://Scenes/Player/GUI.tscn<>uid://depxjboqlf2e6::::res://Scenes/villager.tscn
+::res://Scenes/Player/::1713991498
+Boar.tscn::PackedScene::5458587693107935099::1713975876::0::1::::<><>::res://Scripts/Slime.gd<>uid://cwoe5l8rw6k1a::::res://Assets/Monster Pack 21 (Bovine)/Spritesheets/Updated Boar/Boar_Attack.png<>uid://b2g7otyc1hs55::::res://Assets/Monster Pack 21 (Bovine)/Spritesheets/Updated Boar/Boar_Idle.png<>uid://bqb1pckjd6x1n::::res://Assets/Monster Pack 21 (Bovine)/Spritesheets/Updated Boar/Boar_Move.png
+Dash.tscn::PackedScene::461672494409179954::1713991498::0::1::::<><>::
+GUI.tscn::PackedScene::8800460397341642874::1713975876::0::1::::<><>::res://Scripts/Player/GUI.gd<>uid://d22luwsc6fmuu::::res://Assets/Font/PixeloidSansBold-RpeJo.ttf<>uid://dblb5ji2l5p7a::::res://Assets/ui_big_pieces.png<>uid://d4cyoim416nt3::::res://Scenes/Player/Inventory/Inventory.tscn<>uid://c51s0ody0w0ul::::res://Scenes/Player/quests.tscn<>uid://dihus2c0b17hi::::res://Scenes/Player/profile.tscn
 inventory.tscn::PackedScene::3215547228322196469::1711741678::0::1::::<><>::uid://d22luwsc6fmuu::::res://Assets/Font/PixeloidSansBold-RpeJo.ttf<>res://Scenes/Player/inv/Inventory.gd<>res://Scenes/Player/inv/InvContainer.gd<>uid://dnfw3hgqa5hk3::::res://Scenes/Player/inv/ItemInfo.tscn<>uid://callei1na7eyf::::res://Global/Slot.tres<>uid://c4kfby7ysuinn::::res://Assets/Items/Wooden_Weapon1.png
-Player.tscn::PackedScene::4631353576622516024::1713896202::0::1::::<><>::res://Scripts/Player.gd<>uid://b43fen17knnn2::::res://Assets/Character/Villager/Attack/Villager_Attack.png<>uid://ibbw6ufq3tl6::::res://Assets/Character/Villager/Death/Character_Death.png<>uid://6gi0fakxdnak::::res://Assets/Character/Villager/Idle/Villager_Idle.png<>uid://bckvpeycmx2qt::::res://Assets/Character/Villager/Attack/Equipment/Villager_Attack_Sword.png<>uid://dau10jsyxhfrt::::res://Assets/Character/Villager/Move/Character_Move.png
+Player.tscn::PackedScene::4631353576622516024::1713991498::0::1::::<><>::res://Scripts/Player.gd<>uid://b43fen17knnn2::::res://Assets/Character/Villager/Attack/Villager_Attack.png<>uid://ibbw6ufq3tl6::::res://Assets/Character/Villager/Death/Character_Death.png<>uid://6gi0fakxdnak::::res://Assets/Character/Villager/Idle/Villager_Idle.png<>uid://bckvpeycmx2qt::::res://Assets/Character/Villager/Attack/Equipment/Villager_Attack_Sword.png<>uid://dau10jsyxhfrt::::res://Assets/Character/Villager/Move/Character_Move.png
 profile.tscn::PackedScene::7736471350965941878::1711824562::0::1::::<><>::res://Scripts/Player/Profile.gd
 quests.tscn::PackedScene::6933318789936214679::1703502992::0::1::::<><>::uid://d22luwsc6fmuu::::res://Assets/Font/PixeloidSansBold-RpeJo.ttf
 ::res://Scenes/Player/inv/::1711890645
@@ -156,8 +156,8 @@ ItemInfo.gd::GDScript::-1::1703509634::0::1::::<>CanvasLayer<>::
 ItemInfo.tscn::PackedScene::8083425060874654204::1710602362::0::1::::<><>::res://Scenes/Player/inv/ItemInfo.gd<>uid://c4kfby7ysuinn::::res://Assets/Items/Wooden_Weapon1.png
 Slot.gd::GDScript::-1::1703509510::0::1::::<>Panel<>::
 Slot.tscn::PackedScene::5999826389465792045::1711591044::0::1::::<><>::res://Scenes/Player/inv/Slot.gd<>uid://dblb5ji2l5p7a::::res://Assets/ui_big_pieces.png<>uid://c4kfby7ysuinn::::res://Assets/Items/Wooden_Weapon1.png
-::res://Scenes/Player/Inventory/::1713799350
-Inventory.tscn::PackedScene::9200349921109485838::1713799350::0::1::::<><>::res://Scenes/Player/Inventory/main.gd<>res://Scenes/Player/Inventory/inventory_slot.gd
+::res://Scenes/Player/Inventory/::1713975876
+Inventory.tscn::PackedScene::9200349921109485838::1713975876::0::1::::<><>::res://Scenes/Player/Inventory/main.gd<>res://Scenes/Player/Inventory/inventory_slot.gd
 inventory_item.gd::GDScript::-1::1711755010::0::1::::InventoryItem<>TextureRect<>::
 inventory_slot.gd::GDScript::-1::1711823590::0::1::::InventorySlot<>PanelContainer<>::
 item_data.gd::GDScript::-1::1711754898::0::1::::ItemData<>Resource<>::
