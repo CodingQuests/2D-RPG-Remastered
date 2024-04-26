@@ -217,7 +217,6 @@ frame = 1
 frame_progress = 0.75289
 
 [node name="Panel" type="Panel" parent="."]
-visible = false
 offset_left = 3.0
 offset_top = -69.0
 offset_right = 130.0

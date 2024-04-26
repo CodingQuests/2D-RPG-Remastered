@@ -72,7 +72,6 @@ func _on_attack_detector_area_body_entered(body):
 		body.hit()
 
 
-
 func _on_animation_tree_animation_finished(anim_name):
 	if "Attack" in anim_name:
 		attacking = false

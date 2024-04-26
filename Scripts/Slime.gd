@@ -34,9 +34,11 @@ func _physics_process(delta):
 			2:
 				Anim.play("Attack")
 				self.velocity = Vector2(0,0)
-			_:
-				Anim.play("Idle")
-				self.velocity = Vector2(0,0)
+			3:
+				$AnimationPlayer.play("Death")
+				await $AnimationPlayer.animation_finished
+				self.queue_free()
+
 		if direction.x < 0:
 			Anim.flip_h = true
 			HitDetector.position = Vector2(-8.5, -3)
@@ -68,12 +70,8 @@ func _on_attack_detector_area_body_exited(body):
 			currentState = MobState["CHASING"]
 
 func hit():
-
 	currentState = MobState["DEATH"]
-	$AnimationPlayer.play("Death")
-	await $AnimationPlayer.animation_finished
-	self.queue_free()
-
+	
 
 
 func _on_anim_frame_changed():

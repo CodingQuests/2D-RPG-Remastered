@@ -1,11 +1,12 @@
 extends Node
 
-var CutSceneCurrent = false
 
-var playerMp = 3
+var CutSceneCurrent: bool = false
 
-var playerLVL = 1
-var player_health = 10
+var playerMp: int = 3
+
+var playerLVL: int = 1
+var player_health: int = 10
 var player_defense = 0
 var player_damage = 5
 var playerEXP = 0

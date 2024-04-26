@@ -238,8 +238,7 @@ script = ExtResource("1_nt70p")
 [node name="Anim" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_gaqn4")
-animation = &"Attack"
-frame = 1
+animation = &"Idle"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-1, 13)
